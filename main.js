@@ -5,21 +5,21 @@ const option1 = document.querySelector("option1"),
     option4 = document.querySelector("option4");
 // All our options
 const optionElements = document.querySelectorAll(".option");
-const question = document.getElementById("question"),
-  numberOfQuestion = document.getElementById("number-of-question"),
-  numberofAllQuestions = document.getElementById("number-of-all-questions");
+const question = document.getElementById("question"), //question itself
+    numberOfQuestion = document.getElementById("number-of-question"), //question number
+    numberofAllQuestions = document.getElementById("number-of-all-questions"); // amount of all questions
 
 let indexOfQuestion, //index of current question
   indexOfPage = 0; // index of page
 
-const answerTracker = document.getElementById("answers-tracker"),
-  btnNext = document.getElementById("btn-next");
+const answersTracker = document.getElementById("answers-tracker"), //tracker wrapper
+  btnNext = document.getElementById("btn-next"); //next button
 
 let score = 0; // quiz result
 
-const correctAnswer = document.getElementById("correct-answer"),
-  numberofAllQuestions2 = document.getElementById("number-of-all-questions-2"),
-  btnTryAgain = document.getElementById("btn-try-again");
+const correctAnswer = document.getElementById("correct-answer"), //amount of correct answers
+  numberOfAllQuestions2 = document.getElementById("number-of-all-questions-2"), //amount of all questions in modal window
+  btnTryAgain = document.getElementById("btn-try-again"); //start quiz again button
 
 const questions = [
   {
